@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1065916312105",
+    "firebase_url": "https://vr-flower-tracker-default-rtdb.firebaseio.com",
+    "project_id": "vr-flower-tracker",
+    "storage_bucket": "vr-flower-tracker.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065916312105:android:4dd37a75cc6ef2c7948a38",
+        "android_client_info": {
+          "package_name": "com.Hager.OlfactoryTrainingVR"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmqdoUor5n1tM1yVLS-Wa3T4OT_PC6IsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
