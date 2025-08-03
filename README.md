@@ -1,13 +1,15 @@
 # 🌸 Multisensory VR Game for Olfactory Training 🧠
 
-**An immersive virtual reality rehabilitation system** that supports olfactory recovery for individuals with anosmia (loss of smell).  
-This Unity-based project integrates real-time **scent delivery**, **visual cues**, and **audio feedback** to create a **multisensory experience** proven to enhance neural pathways and promote recovery.
+**An immersive virtual reality rehabilitation system** designed to aid recovery from anosmia (loss of smell).  
+This system delivers synchronized **scent**, **visual**, and **audio cues** to enhance olfactory neuroplasticity through Unity-powered gameplay and real-time hardware integration.
 
 ---
 
 ## 📚 Table of Contents
 
 - [🎯 Features](#-features)
+  - [🧠 Training Mode](#-training-mode)
+  - [🧪 Assessment Mode](#-assessment-mode)
 - [📽️ Demo](#-demo)
 - [🧠 Technologies Used](#-technologies-used)
 - [🔧 System Architecture](#-system-architecture)
@@ -17,15 +19,29 @@ This Unity-based project integrates real-time **scent delivery**, **visual cues*
 
 ## 🎯 Features
 
-### 🌟 Multisensory Rehabilitation Modes
+### 🧠 Training Mode
 
-- **Training Mode**  
-  Interactive environment with guided scent recognition using coordinated **smell**, **visual**, and **auditory cues**.
-  
-- **Assessment Mode**  
-  Four-round scent identification test with randomized stimuli, **timed responses**, and **performance tracking**.
+- 🌺 **Guided Scent Zones**: Players enter specific scent zones inside a virtual environment (e.g., a kitchen, garden) designed in Unity. Each zone is associated with a distinct scent (e.g., rose, lavender, eucalyptus).
+- 🧠 **Multisensory Stimulation**: The user receives:
+  - A **scent**, dispensed in real time via ultrasonic atomizers.
+  - A **visual cue**, such as the appearance of flowers or herbs.
+  - A **contextual sound**, e.g., birds chirping near a lavender bush.
+- 🔁 **Closed-loop interaction**: When the player steps into a zone, Unity updates Firebase, which then activates the appropriate atomizer.
+- 📊 **Real-Time Feedback**: Player actions are tracked to ensure accuracy and consistency, encouraging engagement and adherence.
+- 🎮 **Goal**: Strengthen odor-memory associations through repetition and immersion.
 
-- **Real-time feedback** and **gamification features** such as scores, progress tracking, and reminders.
+---
+
+### 🧪 Assessment Mode
+
+- 🎯 **4-Round Challenge**: Each session consists of four randomized scent tests without assistance.
+- ⏱️ **Timed Response Window**: Players must identify the correct scent within a fixed time after the scent is triggered.
+- 🔄 **Scene-Based Triggering**: Unity signals Firebase to activate a randomized scent. Players make selections via in-game interaction (e.g., choose one of two objects).
+- ✅ **Performance Metrics**:
+  - Accuracy of identification.
+  - Time taken to respond.
+- 📱 **Data Logging**: Results are logged in Firebase and visualized in the mobile app to track progress over time.
+- 🏆 **Gamified Experience**: Scores are used for motivation and leaderboard ranking.
 
 ---
 
@@ -35,7 +51,7 @@ This Unity-based project integrates real-time **scent delivery**, **visual cues*
   <video src="Demo/test mode for olfactory training - Made with Clipchamp.mp4" controls width="640"></video>
 </div>
 
-> 🎥 _Gameplay footage captured in Unity_  
+> 🎥 _Recorded demo of Unity gameplay for olfactory rehabilitation_
 
 ---
 
@@ -47,17 +63,16 @@ This Unity-based project integrates real-time **scent delivery**, **visual cues*
 | Scent Hardware      | ESP32-S3, Arduino, 2N2222 transistors, Atomizers   |
 | Database & Sync     | Firebase Realtime Database                         |
 | Communication       | Unity ↔ Firebase ↔ ESP32 (Wi-Fi via HTTP requests) |
-| App                 | Flutter (for tracking and scheduling sessions)     |
+| App                 | Flutter (for session tracking and reminders)       |
 
 ---
 
 ## 🔧 System Architecture
 
-- **Unity VR Game** triggers scent events through Firebase updates.
-- **ESP32-based scent device** reads real-time Firebase changes and activates appropriate atomizers.
-- **Mobile app** monitors training sessions, scores, and scheduling.
-
-> 🔁 Low-latency synchronization between software and hardware ensures immersive, accurate olfactory feedback.
+- 🕹️ **Unity** delivers real-time VR experience and writes to Firebase based on player location or choices.
+- 🌐 **Firebase** acts as a bridge between Unity and scent hardware.
+- 💨 **ESP32** listens to Firebase changes and activates the corresponding atomizer via connected circuits.
+- 📱 **Mobile App** logs session data, shows progress, and reminds users to complete training.
 
 ---
 
@@ -74,5 +89,3 @@ Prof. Dr. Aliaa Rehan Youssef
 _Systems and Biomedical Engineering Department, Cairo University_
 
 ---
-
-
