@@ -31,7 +31,7 @@ This system delivers synchronized **scent**, **visual**, and **audio cues** to e
 
 ---
 
-### 🧪 Assessment Mode
+### 🧪 Evaluation Mode
 
 - 🎯 **4-Round Challenge**: Each session consists of four randomized scent tests without assistance.
 - ⏱️ **Timed Response Window**: Players must identify the correct scent within a fixed time after the scent is triggered.
@@ -45,12 +45,20 @@ This system delivers synchronized **scent**, **visual**, and **audio cues** to e
 ---
 
 ## 📽️ Demo
+### 1️⃣ Training Mode
 
-<div align="center">
-  <video src="Demo/test mode for olfactory training - Made with Clipchamp.mp4" controls width="640"></video>
-</div>
 
-> 🎥 _Recorded demo of Unity gameplay for olfactory rehabilitation_
+https://github.com/user-attachments/assets/edd01fde-8ce9-41c6-8bad-6e11bcfe159b
+
+
+### 2️⃣ Evaluation Mode
+      
+
+https://github.com/user-attachments/assets/141b6a3d-08d9-4520-9d59-3b0f4d4cf33b
+
+
+
+> 🎥 _Recorded demos of Unity gameplay for olfactory rehabilitation_
 
 ---
 
