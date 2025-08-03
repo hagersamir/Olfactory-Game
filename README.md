@@ -21,11 +21,10 @@ This system delivers synchronized **scent**, **visual**, and **audio cues** to e
 
 ### 🧠 Training Mode
 
-- 🌺 **Guided Scent Zones**: Players enter specific scent zones inside a virtual environment (e.g., a kitchen, garden) designed in Unity. Each zone is associated with a distinct scent (e.g., rose, lavender, eucalyptus).
+- 🌺 **Guided Scent Zones**: Players enter specific scent zones inside a virtual environment (e.g., a plant nursery) designed in Unity. Each zone is associated with a distinct scent (e.g., rose, lavender).
 - 🧠 **Multisensory Stimulation**: The user receives:
   - A **scent**, dispensed in real time via ultrasonic atomizers.
   - A **visual cue**, such as the appearance of flowers or herbs.
-  - A **contextual sound**, e.g., birds chirping near a lavender bush.
 - 🔁 **Closed-loop interaction**: When the player steps into a zone, Unity updates Firebase, which then activates the appropriate atomizer.
 - 📊 **Real-Time Feedback**: Player actions are tracked to ensure accuracy and consistency, encouraging engagement and adherence.
 - 🎮 **Goal**: Strengthen odor-memory associations through repetition and immersion.
