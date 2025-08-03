@@ -47,7 +47,7 @@ This Unity-based project integrates real-time **scent delivery**, **visual cues*
 | Scent Hardware      | ESP32-S3, Arduino, 2N2222 transistors, Atomizers   |
 | Database & Sync     | Firebase Realtime Database                         |
 | Communication       | Unity ↔ Firebase ↔ ESP32 (Wi-Fi via HTTP requests) |
-| App (optional)      | Flutter (for tracking and scheduling sessions)     |
+| App                 | Flutter (for tracking and scheduling sessions)     |
 
 ---
 
